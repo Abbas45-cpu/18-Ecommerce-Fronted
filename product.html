@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>NovaMart | Product</title>
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
++      rel="stylesheet"
++    />
++    <link rel="stylesheet" href="style.css" />
++  </head>
++  <body data-page="product">
++    <header class="site-header" data-header>
++      <div class="topbar">
++        <a class="brand" href="index.html">NovaMart</a>
++        <button class="location" type="button">Deliver to <span>Seattle 98101</span></button>
++        <div class="search" data-search>
++          <select aria-label="Search category">
++            <option>All</option>
++            <option>Electronics</option>
++            <option>Home</option>
++            <option>Fashion</option>
++            <option>Sports</option>
++          </select>
++          <input type="search" placeholder="Search NovaMart" data-search-input />
++          <button class="search-btn" type="button">Search</button>
++          <div class="search-suggestions" data-search-suggestions></div>
++        </div>
++        <div class="top-actions">
++          <button class="theme-toggle" type="button" data-theme-toggle>
++            <span>Light</span>
++            <span class="toggle-dot"></span>
++          </button>
++          <div class="dropdown" data-dropdown>
++            <button class="link-button" type="button" data-dropdown-toggle>Account & Lists</button>
++            <div class="dropdown-menu">
++              <a href="login.html">Sign in</a>
++              <a href="login.html">Your Account</a>
++              <a href="orders.html">Orders</a>
++            </div>
++          </div>
++          <a class="orders" href="checkout.html">Orders</a>
++          <button class="cart-btn" type="button" data-cart-toggle>
++            <span>Cart</span>
++            <span class="badge" data-cart-count>0</span>
++          </button>
++        </div>
++        <button class="mobile-toggle" type="button" data-mobile-toggle>
++          <span></span>
++          <span></span>
++        </button>
++      </div>
++      <nav class="main-nav" data-nav>
++        <button class="mega-toggle" type="button" data-mega-toggle>All</button>
++        <a href="shop.html">Shop</a>
++        <a href="shop.html">Best Sellers</a>
++        <a href="shop.html">New Releases</a>
++        <a href="shop.html">Prime Deals</a>
++        <a href="shop.html">Customer Service</a>
++      </nav>
++      <div class="mega-menu" data-mega-menu>
++        <div class="mega-left">
++          <button class="mega-item active" data-mega-category="electronics">Electronics</button>
++          <button class="mega-item" data-mega-category="home">Home</button>
++          <button class="mega-item" data-mega-category="fashion">Fashion</button>
++          <button class="mega-item" data-mega-category="sports">Sports</button>
++        </div>
++        <div class="mega-content" data-mega-content></div>
++      </div>
++    </header>
++
++    <main class="product-page" data-reveal>
++      <section class="product-detail" data-product-detail></section>
++      <section class="related" data-reveal>
++        <div class="section-header">
++          <div>
++            <h2>Related products</h2>
++            <p>Complete the look with these picks.</p>
++          </div>
++        </div>
++        <div class="carousel" data-carousel>
++          <div class="carousel-track" data-related-track></div>
++        </div>
++      </section>
++    </main>
++
++    <div class="cart-drawer" data-cart-drawer>
++      <div class="cart-drawer-content">
++        <header>
++          <h3>Your Cart</h3>
++          <button class="ghost" type="button" data-cart-close>Close</button>
++        </header>
++        <div class="cart-items" data-cart-items></div>
++        <div class="cart-summary">
++          <div>
++            <span>Subtotal</span>
++            <strong data-cart-subtotal>$0.00</strong>
++          </div>
++          <a class="btn primary" href="cart.html">Go to cart</a>
++        </div>
++      </div>
++    </div>
++    <div class="toast" data-toast></div>
++    <button class="scroll-top" type="button" data-scroll-top>Top</button>
++    <script type="module" src="script.js"></script>
++  </body>
++</html>
